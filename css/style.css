@@ -1,0 +1,250 @@
+:root {
+  --pink-color: #ff817e;
+  --dark-green: #263a41;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  margin-top: 95px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  height: 95px;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* background-color: #fff; */
+}
+.container {
+  width: 1920px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  line-height: 1.31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 185px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 3.2;
+  display: flex;
+  width: 456px;
+  justify-content: space-between;
+}
+.main-menu a {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--dark-green);
+}
+.hero {
+  padding-top: 189px;
+  padding-bottom: 240px;
+}
+.hero-pretitle {
+  font-family: "Rutina", serif;
+  font-size: 13px;
+  color: var(--pink-color);
+  line-height: 4;
+  margin-bottom: 37px;
+}
+.hero-name {
+  font-size: 60px;
+  line-height: 1.15;
+  color: #1e2528;
+  font-weight: 700;
+  font-family: "Rufina";
+  width: 536px;
+  margin: 0 0 47px 0;
+}
+.hero-title {
+  height: 47px;
+  font-size: 15px;
+  line-height: calc(27 / 15);
+  color: #555555;
+  font-family: "Roboto";
+  text-align: left;
+}
+.hero-button {
+  font-size: 13px;
+  /* line-height: calc(72 / 13); */
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-align: center;
+  padding: 20px 30px;
+  margin-right: 55px;
+  background-color: #ff817e;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.button {
+  border: 0;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: calc(27 / 15);
+  font-weight: 500;
+  font-family: "Roboto";
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* .footer {
+  padding: 94px;
+} */
+
+.footer-nav {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+}
+
+.li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+}
+.li:not(:last-child) {
+  border-right: 1px solid;
+}
+
+.about {
+  padding: 184px 0px 70px;
+  text-align: center;
+}
+.about-img {
+  margin: 0 auto 40px;
+}
+
+.about-subtitle {
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 2.7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888;
+  font-family: "Roboto";
+}
+.about-title {
+  font-family: "Rufina", serif;
+  font-size: 42px;
+  line-height: 1.31;
+  font-weight: 700;
+  color: #1e2528;
+  margin-bottom: 38px;
+}
+.about-text {
+  padding: 0 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.87;
+  color: #888;
+  margin-bottom: 71px;
+}
+.about-btn {
+  padding: 13px 28px;
+  background-color: #ff817e;
+  border-radius: 35px;
+  border: none;
+  font-size: 13px;
+  line-height: 2.15;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+/* Gallery */
+.gallery {
+  padding: 70px 0;
+}
+.gallery .container {
+  max-width: 100%;
+  width: 100%;
+}
+.gallery-list {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 5px;
+}
+.gallery-item {
+  position: relative;
+  width: 476px;
+  min-height: 570px;
+}
+.image-wraper {
+  width: 100%;
+  height: 100%;
+}
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-text {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff817e;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition: opacity 300ms;
+}
+.gallery-icon {
+  margin-bottom: 25px;
+}
+.gallery-text-title {
+  font-family: "Rufina";
+}
+.gallery-item:hover {
+  opacity: 1;
+}
